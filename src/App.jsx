@@ -20,7 +20,9 @@ function App() {
   };
 
   useEffect(() => {
-    if (toDo.length > 0) guardarLS();
+    if (toDo.length > 0) {
+      guardarLS();
+    }
   }, [toDo]);
 
   const handleDelete = (item) => {
