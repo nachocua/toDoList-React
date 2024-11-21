@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 
-function App() {
+export default function App() {
   const leerLS = () => {
     let data = localStorage.getItem("datos");
     return data ? JSON.parse(data) : [];
@@ -55,5 +55,3 @@ function App() {
     </>
   );
 }
-
-export default App;
